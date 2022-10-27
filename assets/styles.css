@@ -1,0 +1,48 @@
+* {
+    background-color: #dedede;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.receitas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    width: 500px;
+    padding-right: 15px;
+}
+
+.image {
+    width: 100%;
+    flex: 1 1 0%;
+    
+    padding: 10px;
+}
+
+#topnav {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 12px;
+    font-size: 3vh;
+    background-color: #8fd836 ;
+}
+
+.nav-title,.nav-links, .nav-item {
+    float: none;
+    background-color: inherit; 
+    display: inline-block;
+    padding: 5px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #000000;
+}
