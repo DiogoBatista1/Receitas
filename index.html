@@ -5,41 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <title>Receitas simples e gostosas</title>
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 <body>
     <div id="topnav">
-        <div class="nav-title">ReceitasDio</div> 
+        <div class="nav-title">
+            ReceitasDio
+            <span class="material-symbols-outlined">
+                cooking
+            </span>
+        </div>
         <div class="nav-links">
-            <a href="index.html" class="nav-item">Home</a> 
+            <a href="index.html" class="nav-item">Home</a>
             <a href="#contact" class="nav-item">Contato</a>
             <a href="#about" class="nav-item">Sobre</a>
         </div>
     </div>
     <div class="receitas">
         <div class="column">
-            <a href="/Receitas/arroz-forno.html">
-                <img src="assets/imgs/receita-1.webp" class="image" alt="">
-            </a>
-            <a href="/Receitas/batata-rustica.html">
-                <img src="assets/imgs/receita-2.webp" class="image" alt="">
-            </a>
-            <a href="/Receitas/frango-xadrez.html">
-                <img src="assets/imgs/receita-3.webp" class="image" alt="">
-            </a>
+            <div class="recipe-container">
+                <a href="Receitas/arroz-forno.html">
+                    <img src="assets/imgs/receita-1.webp" class="image">
+                    <div class="overlay">
+                        <div class="recipe-name">Arroz de forno</div>
+                    </div>
+                </a>
+            </div>
+            <div class="recipe-container">
+                <a href="Receitas/batata-rustica.html">
+                    <img src="assets/imgs/receita-2.webp" class="image">
+                    <div class="overlay">
+                        <div class="recipe-name">Batata Rustica</div>
+                    </div>
+                </a>
+            </div>
+            <div class="recipe-container">
+                <a href="Receitas/frango-xadrez.html">
+                    <img src="assets/imgs/receita-3.webp" class="image">
+                    <div class="overlay">
+                        <div class="recipe-name">Frango Xadrez</div>
+                    </div>
+                </a>
+            </div>
         </div>
         <div class="column">
-            <a href="/Receitas/pure.html">
-                <img src="assets/imgs/receita-4.webp" class="image" alt="">
-            </a>
-            <a href="/Receitas/salada-de-batata.html">
-                <img src="assets/imgs/receita-5.webp" class="image" alt="">
-            </a>
-            <a href="/Receitas/strogonoff.html">
-                <img src="assets/imgs/receita-6.webp" class="image" alt="">
-            </a>
+            <div class="recipe-container">
+                <a href="Receitas/pure.html">
+                    <img src="assets/imgs/receita-4.webp" class="image">
+                    <div class="overlay">
+                        <div class="recipe-name">Purê de batata</div>
+                    </div>
+                </a>
+            </div>
+            <div class="recipe-container">
+                <a href="Receitas/salada-de-batata.html">
+                    <img src="assets/imgs/receita-5.webp" class="image">
+                    <div class="overlay">
+                        <div class="recipe-name">Salada de batata</div>
+                    </div>
+                </a>
+            </div>
+            <div class="recipe-container">
+                <a href="Receitas/strogonoff.html">
+                    <img src="assets/imgs/receita-6.webp" class="image">
+                    <div class="overlay">
+                        <div class="recipe-name">Strogonoff</div>
+                    </div>
+                </a>
+            </div>
         </div>
 
     </div>
