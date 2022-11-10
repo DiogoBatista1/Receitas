@@ -218,3 +218,7 @@ input:checked {
     text-align: left;
   }
 }
+
+.fa-bowl-rice {
+  background-color: #ffffff00;
+}
