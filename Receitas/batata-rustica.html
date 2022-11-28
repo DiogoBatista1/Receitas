@@ -1,18 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
     <title>Batata Rustica</title>
+    <script src="https://kit.fontawesome.com/5a08cc2a32.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <h1></h1>
-    </header>
-    <main>
+<div id="topnav" class="tpnav">
+    <div class="nav-title">
+        ReceitasDio
+        <i class="fa-solid fa-bowl-rice"></i>
+    </div>
+    <div class="nav-links">
+        <a href="../index.html" class="nav-item">Home</a>
+        <a href="#contact" class="nav-item">Contato</a>
+        <a href="../About.html" class="nav-item">Sobre</a>
+    </div>
+    <a href="javascript:void(0);" class="nav-icon" onclick="repNav()">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+</div>
+<main>
+    <div class="container">
 
-    </main>
-    <footer></footer>
+        <div class="img-div">
+            <img src="../assets/imgs/receita-2.webp" alt="arroz de forno com frango" class="recipe-image">
+            <div class="recipe-title">Batata Rustica</div>
+        </div>
+        <div class="ing-container">
+            <h2>Ingredientes</h2>
+        </div>
+        <div class="ingredientes">
+            <div class="ingredientes-container">
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-1" class="ingrediente">
+                    <label for="ingrediente-1">3 batatas médias</label>
+                    <span class="checkmark"></span>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-2" class="ingrediente">
+                    <label for="ingrediente-2"> 1/2 colher de sopa de alecrim seco ou 1 colher de sopa de alecrim
+                        fresco</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-3">Azeite de oliva (o suficiente para envolver as batatas)</label>
+                </div>
+            </div>
+        </div>
+        <div class="preparo">
+            <h2>Preparo</h2>
+            <div class="prepSteps">
+                <ol class="steps">
+                    <li>Lave bem as batatas com uma esponja, não precisa tirar a casca.</li>
+                    <li>Corte as batatas em gomos no sentido do comprimento.</li>
+                    <li>Corte em metades até formar gomos com a espessura que preferir.</li>
+                    <li>Coloque-as numa panela, cubra com água e acrescente o sal.</li>
+                    <li>Cozinhe por 6 minutos a partir do momento que levantar fervura.</li>
+                    <li>Desligue o fogo e escorra a água.</li>
+                    <li>Deixe as batatas numa peneira para escorrer e evaporar bem a água.</li>
+                    <li>Transfira para uma assadeira e adicione o alecrim e o sal.</li>
+                    <li>Regue com azeite de oliva e misture cuidadosamente as batatas para envolver todos os pedaços.
+                    </li>
+                    <li>Espalhe os gomos pela assadeira, sem encostar ou sobrepor um no outro para assar inteiro.</li>
+                    <li>Leve ao forno preaquecido a 200 °C por cerca de 30 a 40 minutos.</li>
+                    <li>Retire do forno, e sirva quente! Bom apetite.</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</main>
+<div class="footer-container">
+    <footer>
+        <div class="social" id="contact">
+            <a href="#"><i class="f-icon fa-brands fa-square-github"></i></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="f-icon fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="copyright">ReceitasDio © 2022</p>
+    </footer>
+</div>
 </body>
+<script src="../assets/script.js"></script>
+
 </html>

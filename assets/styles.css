@@ -15,6 +15,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 #topnav {
@@ -96,6 +97,7 @@ h1 {
   padding: 10px;
   font-size: 4vw;
   position: center;
+  color: #3f7003;
 }
 
 
@@ -127,6 +129,10 @@ h1 {
   flex-direction: column;
 }
 
+.prepSteps {
+  padding: 10px;
+}
+
 h3, h2 {
   text-align: center;
   margin: 5px;
@@ -134,7 +140,9 @@ h3, h2 {
 
 .ingredientes {
   display: flex;
+  flex-direction: column;
   gap: 20px;
+  padding: 10px;
 }
 
 .recipe-image {
@@ -191,8 +199,9 @@ input:checked {
     text-decoration: none;
   }
 
-  .nav-title span {
-    display: none;
+  .nav-title {
+    position: absolute;
+    padding-left: 10px;
   }
 
   #topnav {
@@ -206,28 +215,33 @@ input:checked {
     padding: 10px; 
   }
   
-
   .f-icon {
     font-size: 10vw;
     padding: 5px;
   }
+
   .recipe-name {
     font-size: 4vw;
   }
+
   .container {
     width: auto;
     font-size: 4.5vw;
   }
+
   .recipe-image {
     width: 20em;
     border: 0;
   }
+
   .recipe-title {
     font-size: 4.5vw;
   }
+
   .ingredientes {
     flex-direction: column;
   }
+
   input {
     width: 3vw;
     height: 3vw;
@@ -248,14 +262,44 @@ input:checked {
     float: none;
     display: block !important;
     text-align: center;
+    margin-left: 40px;
+  }
+  .tpnav.responsive .nav-links {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 10em;
+    top: 0;
+    margin-top: 50px;
+    padding-right: 0px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-/*  */
+/* Footer */
 
 .footer-container {
   display: flex;
   justify-content: center;
   text-align: center;
   color: #dc143c;
+  padding-bottom: 15px;
+  font-size: 2vw;
+}
+
+/* About */
+
+.aboutp {
+  margin: 20px;
+  font-size: 1.5vw;
+}
+.fonte {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.6vw;
+}
+.fonte-link {
+  text-decoration: none;
+  color: #8fd836;
+  -webkit-text-stroke: 0.3px rgb(0, 117, 16);
 }

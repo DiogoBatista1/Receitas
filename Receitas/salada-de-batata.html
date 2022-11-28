@@ -1,18 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salada de batata</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <title>Salada de batata com bacon</title>
+    <script src="https://kit.fontawesome.com/5a08cc2a32.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <h1></h1>
-    </header>
-    <main>
+<div id="topnav" class="tpnav">
+    <div class="nav-title">
+        ReceitasDio
+        <i class="fa-solid fa-bowl-rice"></i>
+    </div>
+    <div class="nav-links">
+        <a href="../index.html" class="nav-item">Home</a>
+        <a href="#contact" class="nav-item">Contato</a>
+        <a href="../About.html" class="nav-item">Sobre</a>
+    </div>
+    <a href="javascript:void(0);" class="nav-icon" onclick="repNav()">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+</div>
+<main>
+    <div class="container">
 
-    </main>
-    <footer></footer>
+        <div class="img-div">
+            <img src="../assets/imgs/receita-5.webp" alt="arroz de forno com frango" class="recipe-image">
+            <div class="recipe-title">Salada de batata com bacon</div>
+        </div>
+        <div class="ing-container">
+            <h2>Ingredientes</h2>
+        </div>
+        <div class="ingredientes">
+            <div class="ingredientes-container">
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-1" class="ingrediente">
+                    <label for="ingrediente-1">3/4 de xícara de chá de bacon picado</label>
+                    <span class="checkmark"></span>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-2" class="ingrediente">
+                    <label for="ingrediente-2">5 batatas cozidas e picadas</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-3">1 cenoura grande ralada e cozida</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-4">1 tomate picado</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-5">1/2 lata ervilha</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-6">1/2 lata milho</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-7">Cheiro-verde a gosto</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-8">Sal a gosto</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-9">Maionese a gosto</label>
+                </div>
+            </div>
+        </div>
+        <div class="preparo">
+            <h2>Preparo</h2>
+            <div class="prepSteps">
+                <ol class="steps">
+                    <li>Em uma frigideira, frite bem o bacon e reserve; </li>
+                    <li>Em um recipiente grande, adicione a batata, o bacon, a cenoura, o tomate, a ervilha, o milho, o cheiro-verde, o sal e misture bem; </li>
+                    <li>Acrescente a maionese, misture novamente e leve para a geladeira para esfriar;</li>
+                    <li>Agora é só servir;</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</main>
+<div class="footer-container">
+    <footer>
+        <div class="social" id="contact">
+            <a href="#"><i class="f-icon fa-brands fa-square-github"></i></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="f-icon fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="copyright">ReceitasDio © 2022</p>
+    </footer>
+</div>
 </body>
+<script src="../assets/script.js"></script>
+
 </html>

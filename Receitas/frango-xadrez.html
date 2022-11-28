@@ -1,27 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frango Xadrez</title>
-    <script>
-        function escreveIngredientes(arr) {
-            for(let i = 0; i < arr.length; i++) {
-              document.write("<label class='ingredientes'>\
-                <input type='checkbox' checked='checked'>\
-                <span class='checkmark'></span>" + arr[i] + "</label>");
-            }
-        }            
-    </script>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <title>Frango xadrez</title>
+    <script src="https://kit.fontawesome.com/5a08cc2a32.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <h1></h1>
-    </header>
-    <main>
-
-    </main>
-    <footer></footer>
+<div id="topnav" class="tpnav">
+    <div class="nav-title">
+        ReceitasDio
+        <i class="fa-solid fa-bowl-rice"></i>
+    </div>
+    <div class="nav-links">
+        <a href="../index.html" class="nav-item">Home</a>
+        <a href="#contact" class="nav-item">Contato</a>
+        <a href="../About.html" class="nav-item">Sobre</a>
+    </div>
+    <a href="javascript:void(0);" class="nav-icon" onclick="repNav()">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+</div>
+<main>
+    <div class="container">
+        <div class="img-div">
+            <img src="../assets/imgs/receita-3.webp" alt="arroz de forno com frango" class="recipe-image">
+            <div class="recipe-title">Frango Xadrez</div>
+        </div>
+        <div class="ing-container">
+            <h2>Ingredientes</h2>
+        </div>
+        <div class="ingredientes">
+            <div class="ingrediente">
+                <h3>Frango</h3>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-1" class="ingrediente">
+                <label for="ingrediente-1">1kg de frango cortado em cubos</label>
+                <span class="checkmark"></span>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-2" class="ingrediente">
+                <label for="ingrediente-2">Sal e pimenta-do-reino a gosto</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-3">1 colher de sopa de vinagre branco (ou suco de limão)</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-4">Óleo vegetal neutro</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-5">1 pimentão vermelho cortado em cubos</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-6">1 pimentão verde cortado em cubos</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-7">1 pimentão amarelo cortado em cubos</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-8">1 cebola em cortada cubos</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-9">1 colher de sopa de alho triturado ou massado</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-10">1 colher de chá de gengibre em pó</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-11">1 fio de óleo de gergelim (opcional)</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-12">100 ml de shoyu</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-13">1 e 1/2 colher de sopa de amido de milho</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-14">1 xícara de chá de água quente</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-15">1/2 xícara de chá de amendoim torrado e sem pele (opcional)</label>
+            </div>
+            <div class="checkIngredientes">
+                <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                <label for="ingrediente-16">Cebolinha verde picada a gosto</label>
+            </div>
+            
+            <div class="ingrediente">
+                <h3>Molho</h3>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-1">1 colher de sopa bem cheia de amido de milho</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-2">100 ml de água</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-3">50 ml de shoyu</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-4">1/2 envelope de caldo de galinha em pó. Se preferir, troque os 100 ml
+                        de água por caldo de galinha caseiro</label>
+                </div>
+            </div>
+        </div>
+        <div class="preparo">
+            <h2>Preparo do frango</h2>
+            <div class="prepSteps">
+                <ol class="steps">
+                    <li>Reúna todos os ingredientes;</li>
+                    <li>Em um recipiente, coloque o frango já cortado em cubos, tempere com sal (bem pouco, pois vai
+                        shoyu na receita), pimenta e vinagre. Misture bem e deixe marinar alguns minutos; </li>
+                    <li>Esquente um fio de óleo em uma frigideira grande e doure os cubos de frango; </li>
+                    <li>Adicione os pimentões, a cebola, o alho, o gengibre, o óleo de gergelim, misture e deixe
+                        refogar, mexendo por vezes; </li>
+                    <li>Enquanto o frango refoga, coloque o shoyu em um recipiente, o amido de milho e misture até
+                        dissolver bem; </li>
+                    <li>Acrescente a mistura e a água quente no refogado. Misture bem e deixe apurar por alguns minutos
+                        (ou até o molho engrossar); </li>
+                    <li>Junte o amendoim, misture e desligue o fogo; </li>
+                    <li>Finalize com a cebolinha verde e sirva. Bom apetite! </li>
+                    <li>Regue com azeite de oliva e misture cuidadosamente as batatas para envolver todos os pedaços.
+                    </li>
+                    <li>Espalhe os gomos pela assadeira, sem encostar ou sobrepor um no outro para assar inteiro.</li>
+                    <li>Leve ao forno preaquecido a 200 °C por cerca de 30 a 40 minutos.</li>
+                    <li>Retire do forno, e sirva quente! Bom apetite.</li>
+                </ol>
+                <h3>Preparo do molho</h3>
+                <ol class="steps">
+                    <li>Em uma vasilha, misture os ingredientes do molho.</li>
+                    <li>Depois, jogue por cima do frango e dos legumes.</li>
+                    <li>Deixe ferver e engrossar.</li>
+                    <li>Salpique cebolinha na hora de servir.</li>
+                    <li>Agora é só servir. Bom apetite.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+<div class="footer-container">
+    <footer>
+        <div class="social" id="contact">
+            <a href="#"><i class="f-icon fa-brands fa-square-github"></i></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="f-icon fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="copyright">ReceitasDio © 2022</p>
+    </footer>
+</div>
 </body>
+<script src="../assets/script.js"></script>
+
 </html>

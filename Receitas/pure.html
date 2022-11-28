@@ -1,27 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purê de babata com frango</title>
-    <script>
-        function escreveIngredientes(arr) {
-            for(let i = 0; i < arr.length; i++) {
-              document.write("<label class='ingredientes'>\
-                <input type='checkbox' checked='checked'>\
-                <span class='checkmark'></span>" + arr[i] + "</label>");
-            }
-        }            
-    </script>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <title>Purê de batata</title>
+    <script src="https://kit.fontawesome.com/5a08cc2a32.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <h1></h1>
-    </header>
-    <main>
+<div id="topnav" class="tpnav">
+    <div class="nav-title">
+        ReceitasDio
+        <i class="fa-solid fa-bowl-rice"></i>
+    </div>
+    <div class="nav-links">
+        <a href="../index.html" class="nav-item">Home</a>
+        <a href="#contact" class="nav-item">Contato</a>
+        <a href="../About.html" class="nav-item">Sobre</a>
+    </div>
+    <a href="javascript:void(0);" class="nav-icon" onclick="repNav()">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+</div>
+<main>
+    <div class="container">
 
-    </main>
-    <footer></footer>
+        <div class="img-div">
+            <img src="../assets/imgs/receita-4.webp" alt="arroz de forno com frango" class="recipe-image">
+            <div class="recipe-title">Purê de batata com queijo</div>
+        </div>
+        <div class="ing-container">
+            <h2>Ingredientes</h2>
+        </div>
+        <div class="ingredientes">
+            <div class="ingredientes-container">
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-1" class="ingrediente">
+                    <label for="ingrediente-1">650 gramas de batata cozidas e sem casca</label>
+                    <span class="checkmark"></span>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-2" class="ingrediente">
+                    <label for="ingrediente-2">1 colher de sobremesa de manteiga</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-3"> 2 xícaras de chá de leite</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-4">6 colheres de sopa de queijo minas padrão cortado em cubos (mussarela ou prato)</label>
+                </div>
+                <div class="checkIngredientes">
+                    <input type="checkbox" id="ingrediente-3" class="ingrediente">
+                    <label for="ingrediente-5">2 colheres de café de sal</label>
+                </div>
+            </div>
+        </div>
+        <div class="preparo">
+            <h2>Preparo</h2>
+            <div class="prepSteps">
+                <ol class="steps">
+                    <li>Em uma peneira, coloque as batatas e amasse bem elas, para serem peneiradas.</li>
+                    <li>Transfira para uma panela, adicione a manteiga, o leite e deixe cozinhar (fogo médio) até incorporar bem.</li>
+                    <li>Coloque os cubinhos de queijos, o sal e misture bem até o queijo derreter (cerca de 5 minutos).</li>
+                    <li>Agora é só servir. Bom apetite.</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</main>
+<div class="footer-container">
+    <footer>
+        <div class="social" id="contact">
+            <a href="#"><i class="f-icon fa-brands fa-square-github"></i></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="f-icon fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="f-icon fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="copyright">ReceitasDio © 2022</p>
+    </footer>
+</div>
 </body>
+<script src="../assets/script.js"></script>
+
 </html>
